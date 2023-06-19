@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
+.parallax {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    pointer-events: none;
+    transition: 1s cubic-bezier(.1,.55,.37,1);
+}
+
+
+.bg-img {
+    z-index: 1;
+    width: 2000px;
+    top: calc(50% - 70px);
+    left: 50%;
+}
+
+.far-center {
+    z-index: 2;
+    width: 220px;
+    top: calc(50% + 300px);
+    left: calc(50% - 200px);
+}
+
+.far-right {
+    z-index: 3;
+    width: 250px;
+    top: calc(50% + 300px);
+    left: calc(50% + 600px);
+}
+
+.purple-tower {
+    z-index: 4;
+    width: 350px;
+    top: calc(50% + 320px);
+    left: calc(50% + 700px);
+}
+
+.right {
+    z-index: 5;
+    width: 350px;
+    top: calc(50% + 300px);
+    left: calc(50% + 400px);
+}
+
+.left-blue {
+    z-index: 6;
+    width: 400px;
+    top: calc(50% + 300px);
+    left: calc(50% - 650px);
+}
+
+.main-building {
+    z-index: 7;
+    width: 350px;
+    top: calc(50% + 200px);
+    left: calc(50% + 100px);
+}
+
+.left-building {
+    z-index: 8;
+    width: 400px;
+    top: calc(50% + 200px);
+    left: calc(50% - 420px);
+}
+
+.left-small {
+    z-index: 9;
+    width: 350px;
+    top: calc(50% + 350px);
+    left: calc(50% - 190px);
+}
+
+.text {
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    top: calc(40%);
+    color: white;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.light {
+    font-weight: 200;
+    font-size: 80px;
+}
+
+.heavy {    
+    font-weight: bold;
+    font-size: 100px
+}
