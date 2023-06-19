@@ -103,3 +103,23 @@ body {
     font-weight: bold;
     font-size: 100px
 }
+
+@media (max-width: 768px) {
+    .light {
+        font-size: 60px;
+    }
+
+    .heavy {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .light {
+        font-size: 40px;
+    }
+
+    .heavy {
+        font-size: 50px;
+    }
+}
